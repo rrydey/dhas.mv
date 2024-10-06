@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Dhas Education">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dhas.mv/">
+    <meta property="og:image" content="https://dhas.mv/Images/GS-OG.png">
+    <meta property="og:description" content="Enhance Your Professional and Personal Journey with Impactful Knowledge.">
+    <meta property="og:site_name" content="Dhas Education">
+
+
+
+
+    <title>Dhas Education</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon-01.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+</head>
+
+<body>
+
+    <nav class="pad">
+        <img class="nav-logo" src="./Images/lOGO@2x.png" alt="">
+        <ul class="nav-menu">
+            <svg id="nav-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                fill="#47a6ac" onclick=showSidebar() style="cursor: pointer;">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+            <li class="nav-about"><a href="#">About</a></li>
+            <li class="nav-articles"><a href="#">Articles</a></li>
+            <li class="nav-webinars"><a href="#">Webinars</a></li>
+            <li class="nav-courses"><a href="#">Courses</a></li>
+
+        </ul>
+        <ul class="side-bar" id="side-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#252b39"
+                onclick=hideSidebar() style="cursor: pointer;">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+            <li class="nav-about"><a href="#">About</a></li>
+            <li class="nav-articles"><a href="#">Articles</a></li>
+            <li class="nav-webinars"><a href="#">Webinars</a></li>
+            <li class="nav-courses"><a href="#">Courses</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-container section">
+
+        <div class="hero-text-container animated-element2">
+
+
+            <!-- <p class="welcome-text">Welcome to Dhas</p> -->
+            <h1 class="hero-h1">Empower<br>Your Journey to Knowledge</h1>
+            <p class="sub-text">Unlock knowledge, conquer challenges, and shape your destiny!</p>
+            <button class="hero-join-btn"><a href="#">Learn Now</a></button>
+        </div>
+
+        <div class="hero-img-container animated-element">
+            <img class="hero-image" src="./Images/Women 1.jpg" alt="">
+            <!-- <img class="hero-image animated-element" src="./Images/Firefly.png" alt="Girl with Laptop"> -->
+        </div>
+
+    </div>
+
+
+    <div class="numbers-cont">
+
+        <div class="num-word-cont hidden">
+            <div class="big-num" id="c-num">10+</div>
+            <div class="num-word">Courses</div>
+        </div>
+        <div class="num-word-cont hidden">
+            <div class="big-num" id="stu-num">500+</div>
+            <div class="num-word">Students</div>
+        </div>
+        <div class="num-word-cont hidden">
+            <div class="big-num" id="kno-num">100%</div>
+            <div class="num-word">Knowledge</div>
+        </div>
+
+    </div>
+
+    <div class="pictext section">
+        <img class="pic1 hidden" src="./Images/Asset 1@2x.png" alt="Women with Laptop Smiling">
+        <div class="pictext-text-cont">
+            <p class="pictext-head hidden">Ignite Your Creative Spark</p>
+            <p class="pictext-p hidden">Immerse yourself in a <span class="text-highlight">world of possibilities</span>
+                with our courses designed to ignite your
+                creativity. From graphic design to animation, video editing to web development, our expertly crafted
+                curriculum empowers you to turn your <span class="text-highlight"> ideas into reality.</span></p>
+        </div>
+    </div>
+
+    <div class="home-cat-cont section">
+        <h1 class="pictext-head">Course Categories</h1>
+        <div class="cat-cont">
+            <div class="cat hidden">
+                <div class="cat-image">
+                    <img src="./Images/Icons/Cat-icons/GD.svg" alt="Graphic Design">
+                </div>
+                <div class="cat-name">Graphic Design</div>
+            </div>
+
+            <div class="cat hidden">
+                <div class="cat-image">
+                    <img src="./Images/Icons/Cat-icons/Motion.svg" alt="Motion Graphics">
+                </div>
+                <div class="cat-name">Motion Graphics</div>
+            </div>
+
+            <div class="cat hidden">
+                <div class="cat-image">
+                    <img src="./Images/Icons/Cat-icons/Web.svg" alt="Web Development">
+                </div>
+                <div class="cat-name">Web Dev</div>
+            </div>
+
+            <div class="cat hidden">
+                <div class="cat-image">
+                    <img src="./Images/Icons/Cat-icons/Lang.svg" alt="Language Skills">
+                </div>
+                <div class="cat-name">Language Skills</div>
+            </div>
+
+            <div class="cat hidden">
+                <div class="cat-image">
+                    <img src="./Images/Icons/Cat-icons/PD.svg" alt="Personal Growth">
+                </div>
+                <div class="cat-name">Personal Growth</div>
+            </div>
+
+            <div class="cat hidden">
+                <div class="cat-image">
+                    <img src="./Images/Icons/Cat-icons/Business.svg" alt="Business">
+                </div>
+                <div class="cat-name">Business</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews-cont section">
+        <h1 class="pictext-head">Student Reviews</h1>
+        <div class="rev-cont">
+            <div class="rev hidden">
+                <div class="rev-info">
+                    <div class="rev-info-pic">
+                        <img src="./Images/Rev/rev1.jpg" alt="Mujthaba">
+                    </div>
+                    <div class="rev-info-names">
+                        <div class="rev-info-name">
+                            Mujthaba Naseem
+                        </div>
+                        <div class="rev-info-course">
+                            Illustrator Basic Course
+                        </div>
+                    </div>
+                </div>
+                <p class="rev-text">
+                    Dhas provides u the best lessons. Rayyan is the man who brings difference. You wont regret these
+                    courses. in fact, you would love them.
+                </p>
+                <div class="rev-star">
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                </div>
+            </div>
+
+            <div class="rev hidden">
+                <div class="rev-info">
+                    <div class="rev-info-pic">
+                        <img src="./Images/Rev/rev2.jpg" alt="Riza">
+                    </div>
+                    <div class="rev-info-names">
+                        <div class="rev-info-name">
+                            Ibrahim Riza
+                        </div>
+                        <div class="rev-info-course">
+                            5+ Courses
+                        </div>
+                    </div>
+                </div>
+                <p class="rev-text">
+                    I’ve taken 6 courses at Dhas. Rayyan Mohamed is the best tutor—clear, engaging, and supportive. He
+                    makes learning easy and fun. Thank you! 💚
+                </p>
+                <div class="rev-star">
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                </div>
+            </div>
+
+            <div class="rev hidden">
+                <div class="rev-info">
+                    <div class="rev-info-pic">
+                        <img src="./Images/Rev/rev3.jpg" alt="Mohamed">
+                    </div>
+                    <div class="rev-info-names">
+                        <div class="rev-info-name">
+                            Mohamed Hassan
+                        </div>
+                        <div class="rev-info-course">
+                            Illustrator Basic Course
+                        </div>
+                    </div>
+                </div>
+                <p class="rev-text">
+                    Rayyan Mohamed is the best tutor I’ve had—clear,
+                    engaging, and inspiring. His teaching truly impacted me!
+                </p>
+                <div class="rev-star">
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                </div>
+            </div>
+
+            <div class="rev hidden">
+                <div class="rev-info">
+                    <div class="rev-info-pic">
+                        <img src="./Images/Rev/rev4.jpg" alt="Sinaan">
+                    </div>
+                    <div class="rev-info-names">
+                        <div class="rev-info-name">
+                            Sinaan Ali
+                        </div>
+                        <div class="rev-info-course">
+                            Illustrator Basic Course
+                        </div>
+                    </div>
+                </div>
+                <p class="rev-text">
+                    After the Adobe Illustrator course, my design skills improved, making it easy to create professional
+                    posts. I highly recommend it!
+                </p>
+                <div class="rev-star">
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                    <span class="fa fa-star star"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer section">
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <img class="footer-logo" src="./Images/logo-white.png" alt="">
+                <p class="footer-text">Enhance Your Professional and Personal Journey with Impactful Knowledge. </p>
+            </div>
+            <div class="footer-top-right">
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Site Map
+                    </div>
+                    <ul>
+                        <li>Home</li>
+                        <li>Courses</li>
+                        <li>Articles</li>
+                        <li>Webinars</li>
+                        <li>About</li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Courses
+                    </div>
+                    <ul>
+                        <li>Graphic Design</li>
+                        <li>Motion Graphics</li>
+                        <li>Web Development</li>
+                        <li>Language Skills</li>
+                        <li>Personal Growth</li>
+                        <li>Business</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Follow Us
+                    </div>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Viber</li>
+                        <li>Telegram</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Contact Us
+                    </div>
+                    <ul>
+                        <li>+960 754 5458</li>
+                        <li>admin@dhas.mv</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="footer-year"></span> All rights reserved. <span>Dhas Education Pvt Ltd</span>
+            </p>
+            <div>
+                <a href="https://www.facebook.com/dhasmv" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://instagram.com/dhas.mv" class="fa fa-instagram" target="_blank"></a>
+                <a href="whatsapp://send?text=Hello!&phone=+9607545458" class="fa fa-whatsapp"></a>
+                <a href="tg://resolve?phone=9607545458" class="fa fa-telegram"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

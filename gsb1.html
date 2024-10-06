@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Master Course</title>
+    <link rel="stylesheet" href="gs1.css">
+</head>
+<body>
+    <h1>Google Sheets Master Course</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Recording</th>
+                <th>Worksheet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Introduction to Google Sheets</td>
+                <td><a href="https://example.com/recording1" target="_blank">Watch Recording</a></td>
+                <td><a href="#" onclick="openWorksheet('https://example.com/worksheet1', 'worksheet1.jpg')">Open Worksheet</a></td>
+            </tr>
+            <tr>
+                <td>Advanced Formulas</td>
+                <td><a href="https://example.com/recording2" target="_blank">Watch Recording</a></td>
+                <td><a href="#" onclick="openWorksheet('https://example.com/worksheet2', 'worksheet2.jpg')">Open Worksheet</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function openWorksheet(link, image) {
+            window.open(link, '_blank');  // Opens the worksheet link in a new tab
+            const linkElement = document.createElement('a');
+            linkElement.href = image;      // Sets the image link
+            linkElement.download = image;  // Forces download of the image
+            linkElement.click();           // Triggers the download
+        }
+    </script>
+</body>
+</html>
