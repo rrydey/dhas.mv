@@ -10,10 +10,14 @@
   --Light-Grey: #d9d9d9;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   opacity: 1;
-  transition-duration: 0.7s;
+  transition-duration: 0.7s;  
   transition-property: opacity;
 }
 
