@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Dhas Education Courses">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dhas.mv/courses">
+    <meta property="og:image" content="./Images/OG/Home Og-01.png">
+    <meta property="og:description" content="Enhance Your Professional and Personal Journey with Impactful Knowledge.">
+    <meta property="og:site_name" content="Dhas Education">
+
+    <title>Courses | Dhas Education</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon-01.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <svg id="fader" class="fade-out"></svg>
+
+    <nav class="pad">
+        <img class="nav-logo" src="./Images/lOGO@2x.png" alt="">
+        <ul class="nav-menu">
+            <svg id="nav-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                fill="#47a6ac" onclick=showSidebar() style="cursor: pointer;">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+            <li class="nav-about"><a href="./about">About</a></li>
+            <li class="nav-articles"><a href="./articles">Articles</a></li>
+            <li class="nav-webinars"><a href="./webinars">Webinars</a></li>
+            <li class="nav-home"><a href="./">Home</a></li>
+
+        </ul>
+        <ul class="side-bar" id="side-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#252b39"
+                onclick=hideSidebar() style="cursor: pointer;">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+            <li class="nav-about"><a href="./about">About</a></li>
+            <li class="nav-articles"><a href="./articles">Articles</a></li>
+            <li class="nav-webinars"><a href="./webinars">Webinars</a></li>
+            <li class="nav-home"><a href="./">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="section">
+
+        <h1 class="pictext-head" id="catalogue-text">Our Course Catalogue</h1>
+        <div class="cat-filter-cont">
+            <button class="cat-filter-btn cat-filter-btn-active" data-category="all">All</button>
+            <button class="cat-filter-btn" data-category="design">Design</button>
+            <button class="cat-filter-btn" data-category="video">Video</button>
+            <button class="cat-filter-btn" data-category="web-dev">Web Dev</button>
+            <button class="cat-filter-btn" data-category="language">Language</button>
+            <button class="cat-filter-btn" data-category="personal">Personal</button>
+            <button class="cat-filter-btn" data-category="business">Business</button>
+        </div>
+
+        <div class="courses-listing">
+
+            <div class="course" data-category="design">
+                <div class="course-image">
+                    <img src="./Images/courses/ci_aibc.png" alt="Adobe Illustrator Basic Course">
+                </div>
+                <div class="course-info">
+                    <h2 class="course-title">Adobe Illustrator Basic Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="design">
+                <div class="course-image"><img src="./Images/courses/ci_psm.png" alt="Adobe Photoshop Master Course">
+                </div>
+                <div class="course-info">
+                    <h2 class="course-title">Adobe Photoshop Master Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="video">
+                <div class="course-image"><img src="./Images/courses/ci_cc.png" alt="Capcut Basic Course"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Capcut Basic Course</h2>
+                    <p class="course-sub-text">Duration: 2 Weeks<br>Fee: Mvr 295</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="business">
+                <div class="course-image"><img src="./Images/courses/ci_gs.png" alt="Google SHeets Master Course"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Google Sheets Master Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="web-dev">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Web Development Beginner Course</h2>
+                    <p class="course-sub-text">Duration: 3 Months<br>Fee: Mvr 1500</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="language">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Learning English Level 1</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="language">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Learning English Level 2</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="personal">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Time Management Skills Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="design">
+                <div class="course-image"><img src="./Images/courses/ci_ainl.png"
+                        alt="Adobe Illustrator Next Level Course"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Adobe Illustrator Next Level Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 650</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="design">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Logo Design Master Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="personal">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Microsoft Office Essentiasls Course</h2>
+                    <p class="course-sub-text">Duration: 2 Weeks<br>Fee: Mvr 295</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="video">
+                <div class="course-image"><img src="./Images/courses/ci_blender.png" alt="Blender Beginner Course">
+                </div>
+                <div class="course-info">
+                    <h2 class="course-title">Blender Beginner Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 750</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="design">
+                <div class="course-image"><img src="./Images/courses/ci_canva.png" alt="Canva Master Course"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Canva Master Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="video">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Premiere Pro Essentials Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="design">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">After Effects Master Course</h2>
+                    <p class="course-sub-text">Duration: 3 Months<br>Fee: Mvr 1500</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="web-dev">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Wordpress Site Basic Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="personal">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Unlimited Memory Workshop</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="personal">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Atomic Habits Workshop</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+
+            <div class="course" data-category="business">
+                <div class="course-image"></div>
+                <div class="course-info">
+                    <h2 class="course-title">Facebook Marketing Course</h2>
+                    <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
+                    <button class="course-detail-btn">Course Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer section">
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <img class="footer-logo" src="./Images/logo-white.png" alt="">
+                <p class="footer-text">Enhance Your Professional and Personal Journey with Impactful Knowledge. </p>
+            </div>
+            <div class="footer-top-right">
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Site Map
+                    </div>
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./courses">Courses</a></li>
+                        <li><a href="./articles">Articles</a></li>
+                        <li><a href="./webinars">Webinars</a></li>
+                        <li><a href="./about">About</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Courses
+                    </div>
+                    <ul>
+                        <li><a href="./courses?category=design">Graphic Design</a></li>
+                        <li><a href="./courses?category=video">Motion Graphics</a></li>
+                        <li><a href="./courses?category=web-dev">Web Development</a></li>
+                        <li><a href="./courses?category=language">Language Skills</a></li>
+                        <li><a href="./courses?category=personal">Personal Growth</a></li>
+                        <li><a href="./courses?category=business">Business</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Follow Us
+                    </div>
+                    <ul>
+                        <li><a href="https://www.facebook.com/dhasmv" target="_blank">Facebook</a></li>
+                        <li><a href="https://instagram.com/dhas.mv" target="_blank">Instagram</a></li>
+                        <li><a href="https://invite.viber.com/?g2=AQAM2lB0nTrTIVDSdhjrMgthMj%2BdHjven2gvpU%2FyqK5ecZ5zuY104KV1kjfeOws6"
+                                target="_blank">Viber</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Contact Us
+                    </div>
+                    <ul>
+                        <li><a href="tel:9607545458">+960 754 5458</a></li>
+                        <li><a href="mailto:admin@dhas.mv">admin@dhas.mv</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="footer-year"></span> All rights reserved. <span>Dhas Education Pvt Ltd</span>
+            </p>
+            <div>
+                <a href="https://www.facebook.com/dhasmv" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://instagram.com/dhas.mv" class="fa fa-instagram" target="_blank"></a>
+                <a href="whatsapp://send?text=Hello!&phone=+9607545458" class="fa fa-whatsapp"></a>
+                <a href="tg://resolve?phone=9607545458" class="fa fa-telegram"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

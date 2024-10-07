@@ -20,15 +20,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/countup.js@2"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-
-
 </head>
 
 <body>
 
+    <svg id="fader" class="fade-out"></svg>
     <nav class="pad">
         <img class="nav-logo" src="./Images/lOGO@2x.png" alt="">
         <ul class="nav-menu">
@@ -36,10 +32,10 @@
                 fill="#47a6ac" onclick=showSidebar() style="cursor: pointer;">
                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
             </svg>
-            <li class="nav-about"><a href="#">About</a></li>
-            <li class="nav-articles"><a href="#">Articles</a></li>
-            <li class="nav-webinars"><a href="#">Webinars</a></li>
-            <li class="nav-courses"><a href="#">Courses</a></li>
+            <li class="nav-about"><a href="./about">About</a></li>
+            <li class="nav-articles"><a href="./articles">Articles</a></li>
+            <li class="nav-webinars"><a href="./webinars">Webinars</a></li>
+            <li class="nav-courses"><a href="./courses">Courses</a></li>
 
         </ul>
         <ul class="side-bar" id="side-bar">
@@ -48,10 +44,10 @@
                 <path
                     d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg>
-            <li class="nav-about"><a href="#">About</a></li>
-            <li class="nav-articles"><a href="#">Articles</a></li>
-            <li class="nav-webinars"><a href="#">Webinars</a></li>
-            <li class="nav-courses"><a href="#">Courses</a></li>
+            <li class="nav-about"><a href="./about">About</a></li>
+            <li class="nav-articles"><a href="./articles">Articles</a></li>
+            <li class="nav-webinars"><a href="./webinars">Webinars</a></li>
+            <li class="nav-courses"><a href="./courses">Courses</a></li>
         </ul>
     </nav>
 
@@ -63,12 +59,11 @@
             <!-- <p class="welcome-text">Welcome to Dhas</p> -->
             <h1 class="hero-h1">Empower<br>Your Journey to Knowledge</h1>
             <p class="sub-text">Unlock knowledge, conquer challenges, and shape your destiny!</p>
-            <button class="hero-join-btn"><a href="#">Learn Now</a></button>
+            <button class="hero-join-btn"><a href="./courses">Learn Now</a></button>
         </div>
 
         <div class="hero-img-container animated-element">
             <img class="hero-image" src="./Images/Women 1.jpg" alt="">
-            <!-- <img class="hero-image animated-element" src="./Images/Firefly.png" alt="Girl with Laptop"> -->
         </div>
 
     </div>
@@ -105,46 +100,73 @@
     <div class="home-cat-cont section">
         <h1 class="pictext-head">Course Categories</h1>
         <div class="cat-cont">
+
+
             <div class="cat hidden">
-                <div class="cat-image">
-                    <img src="./Images/Icons/Cat-icons/GD.svg" alt="Graphic Design">
-                </div>
-                <div class="cat-name">Graphic Design</div>
+                <a href="./courses?category=design">
+                    <div class="cat-hov">
+                        <div class="cat-image" id="gd-icon">
+                            <img src="./Images/Icons/Cat-icons/GD.svg" alt="Graphic Design">
+                        </div>
+                        <div class="cat-name">Graphic Design</div>
+                    </div>
+                </a>
             </div>
 
             <div class="cat hidden">
-                <div class="cat-image">
-                    <img src="./Images/Icons/Cat-icons/Motion.svg" alt="Motion Graphics">
-                </div>
-                <div class="cat-name">Motion Graphics</div>
+                <a href="./courses?category=video">
+                    <div class="cat-hov">
+                        <div class="cat-image">
+                            <img src="./Images/Icons/Cat-icons/Motion.svg" alt="Motion Graphics">
+                        </div>
+                        <div class="cat-name">Motion Graphics</div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="cat hidden">
+                <a href="./courses?category=web-dev">
+                    <div class="cat-hov">
+                        <div class="cat-image">
+                            <img src="./Images/Icons/Cat-icons/Web.svg" alt="Web Development">
+                        </div>
+                        <div class="cat-name">Web Dev</div>
+                    </div>
+                </a>
             </div>
 
             <div class="cat hidden">
-                <div class="cat-image">
-                    <img src="./Images/Icons/Cat-icons/Web.svg" alt="Web Development">
-                </div>
-                <div class="cat-name">Web Dev</div>
+                <a href="./courses?category=language">
+                    <div class="cat-hov">
+                        <div class="cat-image">
+                            <img src="./Images/Icons/Cat-icons/Lang.svg" alt="Language Skills">
+                        </div>
+                        <div class="cat-name">Language Skills</div>
+                    </div>
+                </a>
             </div>
 
             <div class="cat hidden">
-                <div class="cat-image">
-                    <img src="./Images/Icons/Cat-icons/Lang.svg" alt="Language Skills">
-                </div>
-                <div class="cat-name">Language Skills</div>
+                <a href="./courses?category=personal">
+                    <div class="cat-hov">
+                        <div class="cat-image">
+                            <img src="./Images/Icons/Cat-icons/PD.svg" alt="Personal Growth">
+                        </div>
+                        <div class="cat-name">Personal Growth</div>
+                    </div>
+                </a>
             </div>
 
             <div class="cat hidden">
-                <div class="cat-image">
-                    <img src="./Images/Icons/Cat-icons/PD.svg" alt="Personal Growth">
-                </div>
-                <div class="cat-name">Personal Growth</div>
-            </div>
-
-            <div class="cat hidden">
-                <div class="cat-image">
-                    <img src="./Images/Icons/Cat-icons/Business.svg" alt="Business">
-                </div>
-                <div class="cat-name">Business</div>
+                <a href="./courses?category=business">
+                    <div class="cat-hov">
+                        <div class="cat-image">
+                            <img src="./Images/Icons/Cat-icons/Business.svg" alt="Business">
+                        </div>
+                        <div class="cat-name">Business</div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -274,11 +296,11 @@
                         Site Map
                     </div>
                     <ul>
-                        <li>Home</li>
-                        <li>Courses</li>
-                        <li>Articles</li>
-                        <li>Webinars</li>
-                        <li>About</li>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./courses">Courses</a></li>
+                        <li><a href="./articles">Articles</a></li>
+                        <li><a href="./webinars">Webinars</a></li>
+                        <li><a href="./about">About</a></li>
                     </ul>
 
                 </div>
@@ -288,12 +310,12 @@
                         Courses
                     </div>
                     <ul>
-                        <li>Graphic Design</li>
-                        <li>Motion Graphics</li>
-                        <li>Web Development</li>
-                        <li>Language Skills</li>
-                        <li>Personal Growth</li>
-                        <li>Business</li>
+                        <li><a href="./courses?category=design">Graphic Design</a></li>
+                        <li><a href="./courses?category=video">Motion Graphics</a></li>
+                        <li><a href="./courses?category=web-dev">Web Development</a></li>
+                        <li><a href="./courses?category=language">Language Skills</a></li>
+                        <li><a href="./courses?category=personal">Personal Growth</a></li>
+                        <li><a href="./courses?category=business">Business</a></li>
                     </ul>
                 </div>
 
@@ -302,11 +324,11 @@
                         Follow Us
                     </div>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Twitter</li>
-                        <li>Viber</li>
-                        <li>Telegram</li>
+                        <li><a href="https://www.facebook.com/dhasmv" target="_blank">Facebook</a></li>
+                        <li><a href="https://instagram.com/dhas.mv" target="_blank">Instagram</a></li>
+                        <li><a href="https://invite.viber.com/?g2=AQAM2lB0nTrTIVDSdhjrMgthMj%2BdHjven2gvpU%2FyqK5ecZ5zuY104KV1kjfeOws6"
+                                target="_blank">Viber</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -315,8 +337,8 @@
                         Contact Us
                     </div>
                     <ul>
-                        <li>+960 754 5458</li>
-                        <li>admin@dhas.mv</li>
+                        <li><a href="tel:9607545458">+960 754 5458</a></li>
+                        <li><a href="mailto:admin@dhas.mv">admin@dhas.mv</a></li>
                     </ul>
                 </div>
 

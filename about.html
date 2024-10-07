@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Dhas Education">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dhas.mv/about">
+    <meta property="og:image" content="./Images/OG/Home Og-01.png">
+    <meta property="og:description" content="Enhance Your Professional and Personal Journey with Impactful Knowledge.">
+    <meta property="og:site_name" content="Dhas Education">
+
+
+    <title>About Us</title>
+
+    <link rel="icon" type="image/x-icon" href="./Images/favicon-01.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: var(--Dm-Sans);
+        }
+
+        ::selection {
+            background-color: var(--Main-color) !important;
+            color: white !important;
+        }
+
+        .about-cont {
+            width: 50%;
+            padding-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg id="fader" class="fade-out"></svg>
+
+    <nav class="pad">
+        <img class="nav-logo" src="./Images/lOGO@2x.png" alt="">
+        <ul class="nav-menu">
+            <svg id="nav-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                fill="#47a6ac" onclick=showSidebar() style="cursor: pointer;">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+            <li class="nav-articles"><a href="./articles">Articles</a></li>
+            <li class="nav-webinars"><a href="./webinars">Webinars</a></li>
+            <li class="nav-courses"><a href="./courses">Courses</a></li>
+            <li class="nav-home"><a href="./">Home</a></li>
+
+        </ul>
+        <ul class="side-bar" id="side-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#252b39"
+                onclick=hideSidebar() style="cursor: pointer;">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+            <li class="nav-articles"><a href="./articles">Articles</a></li>
+            <li class="nav-webinars"><a href="./webinars">Webinars</a></li>
+            <li class="nav-courses"><a href="./courses">Courses</a></li>
+            <li class="nav-home"><a href="./">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-container section">
+        <div class="about-cont">
+            <h1 class="pictext-head">About Dhas Education</h1>
+
+            <p>Founded in 2022 and officially <span class="text-highlight"><a
+                        href="https://business.egov.mv/BusinessRegistry/ViewDetails/234184?key=116154644"
+                        target="_blank">registered in 2024 under the Ministry of Economic Development and Trade of
+                        the
+                        Maldives (Registry No. C13562024)</a></span>, Dhas Education is dedicated to providing
+                high-quality online
+                education
+                for everyone across the Maldives.</p>
+            <br>
+            <p>Our mission is simple: to deliver <span class="text-highlight">clear, easy-to-understand education that
+                    empowers individuals</span> from all
+                walks of life. Whether you're looking to develop new skills or enhance your knowledge in a particular
+                field,
+                we have a course for you. Our diverse offerings include:</p>
+            <br>
+            <ul>
+                <li class="bold">Graphic Design</li>
+                <li class="bold">Business & Office Skills</li>
+                <li class="bold">Personal Development</li>
+                <li class="bold">Creative & Language Skills</li>
+                <li class="bold">Web Development and much more.</li>
+            </ul>
+
+            <br>
+
+            <p>Since our inception, we’ve reached <span class="text-highlight">students from all corners of the
+                    country.</span> Our students consistently
+                commend us for our engaging teaching methods that make complex concepts easy to grasp. At Dhas
+                Education, we
+                pride ourselves on providing <span class="text-highlight">personalized support,</span> tailoring our
+                approach to each student's unique needs
+                to
+                help them progress confidently.</p><br>
+            <p><a href="./courses" class="text-highlight">Join us</a> at Dhas Education, and take the first step towards
+                achieving your personal and professional
+                goals.
+            </p>
+        </div>
+
+        <div class="hero-img-container animated-element">
+            <img class="hero-image" src="./Images/Women 1.jpg" alt="Girl with Laptop">
+        </div>
+    </div>
+
+    <div class="site-footer section">
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <img class="footer-logo" src="./Images/logo-white.png" alt="">
+                <p class="footer-text">Enhance Your Professional and Personal Journey with Impactful Knowledge. </p>
+            </div>
+            <div class="footer-top-right">
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Site Map
+                    </div>
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./courses">Courses</a></li>
+                        <li><a href="./articles">Articles</a></li>
+                        <li><a href="./webinars">Webinars</a></li>
+                        <li><a href="./about">About</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Courses
+                    </div>
+                    <ul>
+                        <li><a href="./courses?category=design">Graphic Design</a></li>
+                        <li><a href="./courses?category=video">Motion Graphics</a></li>
+                        <li><a href="./courses?category=web-dev">Web Development</a></li>
+                        <li><a href="./courses?category=language">Language Skills</a></li>
+                        <li><a href="./courses?category=personal">Personal Growth</a></li>
+                        <li><a href="./courses?category=business">Business</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Follow Us
+                    </div>
+                    <ul>
+                        <li><a href="https://www.facebook.com/dhasmv" target="_blank">Facebook</a></li>
+                        <li><a href="https://instagram.com/dhas.mv" target="_blank">Instagram</a></li>
+                        <li><a href="https://invite.viber.com/?g2=AQAM2lB0nTrTIVDSdhjrMgthMj%2BdHjven2gvpU%2FyqK5ecZ5zuY104KV1kjfeOws6"
+                                target="_blank">Viber</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <div class="footer-list-heading">
+                        Contact Us
+                    </div>
+                    <ul>
+                        <li><a href="tel:9607545458">+960 754 5458</a></li>
+                        <li><a href="mailto:admin@dhas.mv">admin@dhas.mv</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="footer-year"></span> All rights reserved. <span>Dhas Education Pvt Ltd</span>
+            </p>
+            <div>
+                <a href="https://www.facebook.com/dhasmv" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://instagram.com/dhas.mv" class="fa fa-instagram" target="_blank"></a>
+                <a href="whatsapp://send?text=Hello!&phone=+9607545458" class="fa fa-whatsapp"></a>
+                <a href="tg://resolve?phone=9607545458" class="fa fa-telegram"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
