@@ -1097,7 +1097,7 @@ h2 {
   .cat-filter-btn {
     width: 80px;
     height: 30px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .courses-listing {
@@ -1115,7 +1115,7 @@ h2 {
   }
 
   .course-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .course-sub-text {
@@ -1126,8 +1126,7 @@ h2 {
     width: 115px;
     height: 30px;
     border-radius: 8px;
-    font-size: 0.8rem;
-    background-color: red;
+    font-size: 0.7rem;
   }
 }
 .hidden {
