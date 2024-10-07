@@ -1123,10 +1123,11 @@ h2 {
   }
 
   .course-detail-btn {
-    width: 110px;
+    width: 115px;
     height: 30px;
     border-radius: 8px;
     font-size: 0.8rem;
+    background-color: red;
   }
 }
 .hidden {
