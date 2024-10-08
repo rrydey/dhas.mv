@@ -1,226 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Filterable Items Page</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Illustrator Basic Course</title>
     <style>
-        /* styles.css */
 
-        /* Basic Reset */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
 
-        /* Body Styling */
-        body {
-            font-family: Arial, sans-serif;
+        .container {
+            background-color: #1a1a1a;
+            width: 1000px; /* Rectangle width */
+            height: 200px; /* Rectangle height */
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
             padding: 20px;
-            background-color: #f5f5f5;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
-        /* Filter Buttons Container */
-        .filter-container {
-            margin-bottom: 20px;
-            text-align: center;
+        h1 {
+            color: #00bcd4;
+            font-size: 36px;
+            margin: 0;
         }
 
-        .filter-btn {
-            background-color: #fff;
-            border: 2px solid #007BFF;
-            color: #007BFF;
-            padding: 10px 20px;
-            margin: 5px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+        .instructor {
+            color: #b0bec5;
+            font-size: 18px;
+            margin-top: 10px;
         }
 
-        .filter-btn:hover {
-            background-color: #007BFF;
-            color: #fff;
-        }
-
-        .filter-btn.active {
-            background-color: #007BFF;
-            color: #fff;
-        }
-
-        /* Items Container */
-        .items-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        /* Individual Item */
-        .item {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 250px;
-            padding: 15px;
-            text-align: center;
-            opacity: 1;
-            transform: translateY(0);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-
-        .item.hidden {
-            opacity: 0;
-            transform: translateY(-20px);
-            pointer-events: none;
-            /* Disable interaction with hidden items */
-            visibility: hidden;
-            /* Hide from assistive technologies */
-        }
-
-        .item img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        .item h3 {
-            margin: 10px 0;
-        }
-
-        .item p {
-            color: #555;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        .view-more-btn {
-            background-color: #28A745;
-            border: none;
-            color: #fff;
-            padding: 8px 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .view-more-btn:hover {
-            background-color: #218838;
-        }
-
-        /* Optional: Smooth transition for layout changes */
-        .items-container {
-            transition: all 0.5s ease;
+        .box {
+            width: 400px; /* Square size */
+            height: 400px; /* Square size */
+            background-color: #00bcd4;
+            border-radius: 8px;
+            position: absolute;
+            top: calc(50% - 200px); /* Center vertically */
+            left: calc(50% - 200px); /* Center horizontally */
+            z-index: 1; /* Positioned in front of the container */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
-
 <body>
-
-    <!-- Filter Buttons -->
-    <div class="filter-container">
-        <button class="filter-btn active" data-category="all">All</button>
-        <button class="filter-btn" data-category="category1">Category 1</button>
-        <button class="filter-btn" data-category="category2">Category 2</button>
-        <button class="filter-btn" data-category="category3">Category 3</button>
-        <!-- Add more buttons as needed -->
+    <div class="container">
+        <div class="box"></div>
+        <h1>Adobe Illustrator Basic Course</h1>
+        <p class="instructor">Instructor: Rayyan Mohamed</p>
     </div>
-
-    <!-- Items Container -->
-    <div class="items-container">
-        <!-- Item 1 -->
-        <div class="item" data-category="category1">
-            <img src="image1.jpg" alt="Item 1 Photo">
-            <h3>Item 1 Title</h3>
-            <p>Some details about Item 1.</p>
-            <button class="view-more-btn">View More</button>
-        </div>
-
-        <!-- Item 2 -->
-        <div class="item" data-category="category2">
-            <img src="image2.jpg" alt="Item 2 Photo">
-            <h3>Item 2 Title</h3>
-            <p>Some details about Item 2.</p>
-            <button class="view-more-btn">View More</button>
-        </div>
-
-        <!-- Add more items as needed -->
-    </div>
-
-    <script>
-        // script.js
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const items = document.querySelectorAll('.item');
-
-            // Function to get the value of a query parameter by name
-            function getQueryParam(param) {
-                const urlParams = new URLSearchParams(window.location.search);
-                return urlParams.get(param);
-            }
-
-            // Function to update the URL with the selected category
-            function updateURL(category) {
-                const url = new URL(window.location);
-                if (category === 'all') {
-                    url.searchParams.delete('category');
-                } else {
-                    url.searchParams.set('category', category);
-                }
-                window.history.pushState({}, '', url);
-            }
-
-            // Function to apply the filter based on the category
-            function applyFilter(category) {
-                // Remove 'active' class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-
-                // Add 'active' class to the corresponding button
-                if (category === 'all' || !category) {
-                    document.querySelector('.filter-btn[data-category="all"]').classList.add('active');
-                } else {
-                    const activeButton = document.querySelector(`.filter-btn[data-category="${category}"]`);
-                    if (activeButton) {
-                        activeButton.classList.add('active');
-                    }
-                }
-
-                // Show or hide items based on the category
-                items.forEach(item => {
-                    if (!category || category === 'all') {
-                        item.classList.remove('hidden'); // Show item
-                    } else {
-                        if (item.getAttribute('data-category') === category) {
-                            item.classList.remove('hidden'); // Show item
-                        } else {
-                            item.classList.add('hidden'); // Hide item
-                        }
-                    }
-                });
-            }
-
-            // Initial filter based on the URL
-            const initialCategory = getQueryParam('category') || 'all';
-            applyFilter(initialCategory);
-
-            // Event listeners for filter buttons
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const category = button.getAttribute('data-category');
-                    applyFilter(category);
-                    updateURL(category);
-                });
-            });
-
-            // Handle back/forward navigation
-            window.addEventListener('popstate', () => {
-                const category = getQueryParam('category') || 'all';
-                applyFilter(category);
-            });
-        });
-    </script>
+    
 </body>
-
 </html>

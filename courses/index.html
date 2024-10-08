@@ -8,13 +8,13 @@
     <meta property="og:title" content="Dhas Education Courses">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dhas.mv/courses">
-    <meta property="og:image" content="./Images/OG/Home Og-01.png">
+    <meta property="og:image" content="../Images/OG/Home Og-01.png">
     <meta property="og:description" content="Enhance Your Professional and Personal Journey with Impactful Knowledge.">
     <meta property="og:site_name" content="Dhas Education">
 
     <title>Courses | Dhas Education</title>
-    <link rel="icon" type="image/x-icon" href="./Images/favicon-01.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../Images/favicon-01.png">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/countup.js@2"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -23,28 +23,33 @@
     <svg id="fader" class="fade-out"></svg>
 
     <nav class="pad">
-        <img class="nav-logo" src="./Images/lOGO@2x.png" alt="">
+        <a href="../">
+            <img class="nav-logo" src="../Images/lOGO@2x.png" alt="">
+        </a>
         <ul class="nav-menu">
             <svg id="nav-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
                 fill="#47a6ac" onclick=showSidebar() style="cursor: pointer;">
                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
             </svg>
-            <li class="nav-about"><a href="./about">About</a></li>
-            <li class="nav-articles"><a href="./articles">Articles</a></li>
-            <li class="nav-webinars"><a href="./webinars">Webinars</a></li>
-            <li class="nav-home"><a href="./">Home</a></li>
+            <li class="nav-about"><a href="../about">About</a></li>
+            <li class="nav-articles"><a href="../articles">Articles</a></li>
+            <li class="nav-webinars"><a href="../webinars">Webinars</a></li>
+            <li class="nav-home"><a href="../">Home</a></li>
 
         </ul>
         <ul class="side-bar" id="side-bar">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#252b39"
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#47a6ac"
                 onclick=hideSidebar() style="cursor: pointer;">
                 <path
                     d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg>
-            <li class="nav-about"><a href="./about">About</a></li>
-            <li class="nav-articles"><a href="./articles">Articles</a></li>
-            <li class="nav-webinars"><a href="./webinars">Webinars</a></li>
-            <li class="nav-home"><a href="./">Home</a></li>
+            <li class="nav-home"><a href="../">Home</a></li>
+            <li class="nav-webinars"><a href="../webinars">Webinars</a></li>
+            <li class="nav-articles"><a href="../articles">Articles</a></li>
+            <li class="nav-about"><a href="../about">About</a></li>
+
+
+
         </ul>
     </nav>
 
@@ -70,7 +75,7 @@
                 <div class="course-info">
                     <h2 class="course-title">Adobe Illustrator Basic Course</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
-                    <button class="course-detail-btn">Course Details</button>
+                    <button class="course-detail-btn"><a href="./aibc">Course Details</a></button>
                 </div>
             </div>
 
@@ -94,7 +99,7 @@
             </div>
 
             <div class="course" data-category="business">
-                <div class="course-image"><img src="./Images/courses/ci_gs.png" alt="Google SHeets Master Course"></div>
+                <div class="course-image"><img src="./Images/courses/ci_gs.png" alt="Google Sheets Master Course"></div>
                 <div class="course-info">
                     <h2 class="course-title">Google Sheets Master Course</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
@@ -103,7 +108,7 @@
             </div>
 
             <div class="course" data-category="web-dev">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_web.png" alt="Web Development"></div>
                 <div class="course-info">
                     <h2 class="course-title">Web Development Beginner Course</h2>
                     <p class="course-sub-text">Duration: 3 Months<br>Fee: Mvr 1500</p>
@@ -112,7 +117,7 @@
             </div>
 
             <div class="course" data-category="language">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_eng1.png" alt="English Level 1"></div>
                 <div class="course-info">
                     <h2 class="course-title">Learning English Level 1</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
@@ -121,7 +126,7 @@
             </div>
 
             <div class="course" data-category="language">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_eng2.png" alt="English Level 2"></div>
                 <div class="course-info">
                     <h2 class="course-title">Learning English Level 2</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
@@ -130,7 +135,7 @@
             </div>
 
             <div class="course" data-category="personal">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_time.png" alt="Time Management Skills"></div>
                 <div class="course-info">
                     <h2 class="course-title">Time Management Skills Course</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
@@ -149,7 +154,7 @@
             </div>
 
             <div class="course" data-category="design">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_logo.png" alt="Logo Design"></div>
                 <div class="course-info">
                     <h2 class="course-title">Logo Design Master Course</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
@@ -158,7 +163,7 @@
             </div>
 
             <div class="course" data-category="personal">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_ms_office.png" alt="Microsoft Office"></div>
                 <div class="course-info">
                     <h2 class="course-title">Microsoft Office Essentiasls Course</h2>
                     <p class="course-sub-text">Duration: 2 Weeks<br>Fee: Mvr 295</p>
@@ -186,7 +191,7 @@
             </div>
 
             <div class="course" data-category="video">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_premiere.png" alt="Premire Pro"></div>
                 <div class="course-info">
                     <h2 class="course-title">Premiere Pro Essentials Course</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
@@ -194,8 +199,8 @@
                 </div>
             </div>
 
-            <div class="course" data-category="design">
-                <div class="course-image"></div>
+            <div class="course" data-category="video">
+                <div class="course-image"><img src="./Images/courses/ci_ae.png" alt="After Effects"></div>
                 <div class="course-info">
                     <h2 class="course-title">After Effects Master Course</h2>
                     <p class="course-sub-text">Duration: 3 Months<br>Fee: Mvr 1500</p>
@@ -204,7 +209,7 @@
             </div>
 
             <div class="course" data-category="web-dev">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_wordpress.png" alt="Wordpress"></div>
                 <div class="course-info">
                     <h2 class="course-title">Wordpress Site Basic Course</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
@@ -213,7 +218,7 @@
             </div>
 
             <div class="course" data-category="personal">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_memory.png" alt="Unlimited Memory"></div>
                 <div class="course-info">
                     <h2 class="course-title">Unlimited Memory Workshop</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
@@ -222,7 +227,7 @@
             </div>
 
             <div class="course" data-category="personal">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_habits.png" alt="Atomic Habits"></div>
                 <div class="course-info">
                     <h2 class="course-title">Atomic Habits Workshop</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
@@ -231,7 +236,7 @@
             </div>
 
             <div class="course" data-category="business">
-                <div class="course-image"></div>
+                <div class="course-image"><img src="./Images/courses/ci_fb.png" alt="Facebook Marketing"></div>
                 <div class="course-info">
                     <h2 class="course-title">Facebook Marketing Course</h2>
                     <p class="course-sub-text">Duration: 1 Month<br>Fee: Mvr 555</p>
@@ -244,7 +249,7 @@
     <div class="site-footer section">
         <div class="footer-top">
             <div class="footer-top-left">
-                <img class="footer-logo" src="./Images/logo-white.png" alt="">
+                <img class="footer-logo" src="../Images/logo-white.png" alt="">
                 <p class="footer-text">Enhance Your Professional and Personal Journey with Impactful Knowledge. </p>
             </div>
             <div class="footer-top-right">
@@ -253,11 +258,11 @@
                         Site Map
                     </div>
                     <ul>
-                        <li><a href="./">Home</a></li>
-                        <li><a href="./courses">Courses</a></li>
-                        <li><a href="./articles">Articles</a></li>
-                        <li><a href="./webinars">Webinars</a></li>
-                        <li><a href="./about">About</a></li>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../courses">Courses</a></li>
+                        <li><a href="../articles">Articles</a></li>
+                        <li><a href="../webinars">Webinars</a></li>
+                        <li><a href="../about">About</a></li>
                     </ul>
 
                 </div>
@@ -267,12 +272,12 @@
                         Courses
                     </div>
                     <ul>
-                        <li><a href="./courses?category=design">Graphic Design</a></li>
-                        <li><a href="./courses?category=video">Motion Graphics</a></li>
-                        <li><a href="./courses?category=web-dev">Web Development</a></li>
-                        <li><a href="./courses?category=language">Language Skills</a></li>
-                        <li><a href="./courses?category=personal">Personal Growth</a></li>
-                        <li><a href="./courses?category=business">Business</a></li>
+                        <li><a href="../courses?category=design">Graphic Design</a></li>
+                        <li><a href="../courses?category=video">Motion Graphics</a></li>
+                        <li><a href="../courses?category=web-dev">Web Development</a></li>
+                        <li><a href="../courses?category=language">Language Skills</a></li>
+                        <li><a href="../courses?category=personal">Personal Growth</a></li>
+                        <li><a href="../courses?category=business">Business</a></li>
                     </ul>
                 </div>
 
@@ -316,7 +321,7 @@
     </div>
 
 
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
